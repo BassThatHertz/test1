@@ -28,7 +28,7 @@ The sgxwallet server is still in active development and therefore should be rega
 
 ### Clone this repo
 
-As you probably suspect, the first thing to do is to clone this repository and all it is sub-repositories. 
+As you probably suspect, the first thing to do is to clone this repository and all its sub-repositories. 
 
 ```bash
 git clone https://github.com/skalenetwork/sgxwallet.git --recurse-submodules
@@ -50,7 +50,7 @@ Then run sgxwallet using docker-compose
 cd run_sgx_sim; sudo docker-compose up
 ```
 
-Note: you need a machine that supports Intel AVX512 instruction set.  Most modern Intel CPUs support it. To verify you machine supports AVX512, run
+Note: you need a machine that supports Intel AVX512 instruction set.  Most modern Intel CPUs support it. To verify your machine supports AVX512, run
 
 
 ```
@@ -58,10 +58,10 @@ cat /proc/cpuinfo | grep avx512
 ```
 
 
-Note: sgxwallet requires docker-compose for correct operation. You must always use 
+Note: sgxwallet requires docker-compose for the correct operation. You must always use 
 docker-compose and avoid using raw docker tools.
 
-Note: simulation mode is only to try sgxwallet. 
+Note: The simulation mode is only to try sgxwallet. 
 In production, you need to run sgxwallet on a server that supports SGX.
 Never run a production sgxserver in simulation mode.  
 
